@@ -8,5 +8,3 @@ COPY ./reinstall-cmake.sh /tmp/
 RUN chmod +x /tmp/reinstall-cmake.sh && /tmp/reinstall-cmake.sh ${REINSTALL_CMAKE_VERSION_FROM_SOURCE} && rm -f /tmp/reinstall-cmake.sh
 
 RUN apt-get update && apt-get upgrade -y
-
-RUN chmod +x scripts/linux_build.sh && ./scripts/linux_build.sh
