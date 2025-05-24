@@ -13,7 +13,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "git submodule update --init --recursive && chmod +x scripts/linux_build.sh && ./scripts/linux_build.sh",
+    "postCreateCommand": "git submodule update --init --recursive && chmod +x scripts/linux_build.sh && ./scripts/linux_build.sh && npm i",
 
 	// Configure tool-specific properties.
 	"customizations": {
